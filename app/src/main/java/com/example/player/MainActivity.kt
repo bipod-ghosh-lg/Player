@@ -17,6 +17,12 @@ class MainActivity : ComponentActivity() {
 
         exoPlayer = ExoPlayer.Builder(this).build()
 
+        if(DeviceUtils.isEmulator()){
+            SecureWindow.preventScreenshots(window = window)
+        }else{
+            SecureWindow.preventScreenshots(window = window)
+        }
+
         setContent {
             PlayerTheme {
                 val uri = intent?.data
