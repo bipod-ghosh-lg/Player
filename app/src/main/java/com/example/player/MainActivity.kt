@@ -4,6 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.media3.exoplayer.ExoPlayer
+import com.example.player.screenshotprevention.securityflag.SecureWindow
+import com.example.player.screenshotprevention.utils.DeviceUtils
 import com.example.player.ui.theme.PlayerTheme
 
 
